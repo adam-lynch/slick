@@ -1868,7 +1868,7 @@
 
         _.animating = true;
 
-        var beforeChangeEvent = jQuery.Event("beforeChange");
+        var beforeChangeEvent = $.Event("beforeChange");
         _.$slider.trigger(beforeChangeEvent, [_, _.currentSlide, animSlide]);
         if(beforeChangeEvent.isDefaultPrevented()){
             _.animating = false;
